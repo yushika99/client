@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import Reactfrom from 'react';
+import Task from './Tasks'
+import{paper,TextField}from '@material-ui/core';
 import './App.css';
+import Tasks from './Tasks';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Tasks {
+  state={tasks:[],currentTask:""}
+  render(){
+    return(
+    <div className= "App flex">
+      <paper elevation ={3}>
+
+      </paper>
+      
+    </div> );
+  }
 }
 
 export default App;
